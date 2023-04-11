@@ -17,8 +17,8 @@ model = pd.DataFrame({'x': x.ravel(),
                      'z': z.ravel()})
 
 Chart = alt.Chart(model).mark_rect().encode(
-    x='x:O',
-    y='y:O',
+    x='y:O',
+    y='x:O',
     color='z:Q',
     tooltip='z:Q'
 )
